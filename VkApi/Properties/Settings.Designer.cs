@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VkApi.Properties
+namespace MyVkApi.Properties
 {
 
 
