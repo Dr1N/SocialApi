@@ -42,15 +42,38 @@ namespace VkApiNS
             catch (VkApiAuthorizationException vka)
             {
                 Program.Logger.Error("Authorization", vka);
+                throw new VkAgentExeption("Authorization error!");
             }
             catch (VkApiException vkex)
             {
                 Program.Logger.Error("VK.NET", vkex);
+                throw new VkAgentExeption("VK.NET error!");
             }
             catch (Exception ex)
             {
                 Program.Logger.Error("Error", ex.Message);
+                throw new VkAgentExeption("Common error!");
             }
+        }
+
+        public void JoinToGroup()
+        {
+
+        }
+
+        public void Like()
+        {
+
+        }
+
+        public void Tell()
+        {
+
+        }
+        
+        public void AddVideo()
+        {
+
         }
     }
 }
